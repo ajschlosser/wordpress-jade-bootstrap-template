@@ -1,0 +1,151 @@
+/* line 17, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 88, ../scss/partials/_var.scss */
+.mobile-only {
+  display: block;
+}
+@media (min-width: 1000px) {
+  /* line 88, ../scss/partials/_var.scss */
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* line 94, ../scss/partials/_var.scss */
+.mobile-block {
+  display: block !important;
+}
+@media (min-width: 1000px) {
+  /* line 94, ../scss/partials/_var.scss */
+  .mobile-block {
+    display: inline-block !important;
+  }
+}
+
+/* line 100, ../scss/partials/_var.scss */
+.no-mobile {
+  display: none;
+}
+@media (min-width: 1000px) {
+  /* line 100, ../scss/partials/_var.scss */
+  .no-mobile {
+    display: block;
+  }
+}
+
+/* line 106, ../scss/partials/_var.scss */
+.no-mobile-inline-block {
+  display: none;
+}
+@media (min-width: 1000px) {
+  /* line 106, ../scss/partials/_var.scss */
+  .no-mobile-inline-block {
+    display: inline-block;
+  }
+}
+
+/* line 112, ../scss/partials/_var.scss */
+.shrunk {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 116, ../scss/partials/_var.scss */
+.centered-margins {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* line 121, ../scss/partials/_var.scss */
+.fixed-width {
+  width: 1000px;
+}
+@media (max-width: 1000px) {
+  /* line 121, ../scss/partials/_var.scss */
+  .fixed-width {
+    width: 100%;
+  }
+}
+
+/* line 127, ../scss/partials/_var.scss */
+.fixed-width-centered {
+  width: 1000px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  /* line 127, ../scss/partials/_var.scss */
+  .fixed-width-centered {
+    width: 100%;
+  }
+}
+
+/* line 134, ../scss/partials/_var.scss */
+.left-justify {
+  text-align: left;
+}
