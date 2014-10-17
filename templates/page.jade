@@ -4,21 +4,21 @@ section(role="main").entry
 		article(id!="post-<?php the_ID(); ?>" class!="<?php post_class(); ?>")
 			header.header
 				.row
-					.large-12.columns
+					.col-lg-12
 						h1
 							- the_title();
 			section.content
 				- if (is_page("")) {
 					.some-container
 						.row
-							.large-6.columns
-							.large-6.columns
+							.col-lg-6
+							.col-lg-6
 				- } else {
 					.article-container
 						.row
-							.large-3.columns.nav
+							.col-lg-3.nav
 								- get_template_part("sidenav");
-							.large-9.columns.art.left-justify
+							.col-lg-3.art.left-justify
 								- the_content();
 				- }
 	- endwhile; endif;
