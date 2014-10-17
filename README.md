@@ -1,4 +1,4 @@
-# Blank Gulp/Jade/Compass/Sass Template WordPress Theme using Bootstrap
+# Blank Gulp/Jade/Compass/Sass Template WordPress Theme Using Bootstrap
 
 ### Description
 
