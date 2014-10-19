@@ -10,7 +10,7 @@ Based on the BlankSlate theme by TidyThemes, Blank Gulp/Jade/Compass/Sass Templa
 
 ### Installation
 
-Installation requires _npm_ and _bower_. If necessary, please install these first.
+Installation requires _npm_ and _bower_. If necessary, please install these (ideally, globally) first.
 
 First (or then), install the back-end dependencies (gulp, etc.):
 
