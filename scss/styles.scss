@@ -1,8 +1,10 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/utilities";
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
 // Uncomment if spriting with Compass
 //@import "../images/sprite/*.png";
 //@include all-sprite-sprites;
 @import "partials/var";
-

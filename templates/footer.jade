@@ -3,8 +3,8 @@ footer(role="contentinfo")
 		p
 			| Copyright (C) 2014 
 			a(href="http://www.aaronschlosser.com", target="_blank") Aaron John Schlosser
-script(src="bower_components/jquery/dist/jquery.min.js")
-script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+script(src!="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js")
+script(src!="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js")
 - wp_footer();
 | </body>
 | </html>

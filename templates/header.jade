@@ -5,8 +5,7 @@ head
 	meta(name="viewport" content="width=device-width")
 	title
 		- wp_title( " | ", true, "right" );
-	link(type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
-	link(type="text/css" rel="stylesheet" href="stylesheets/screen.css")
+	link(type="text/css" rel="stylesheet" href!="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/styles.css")
 	- wp_head();
 | <body <?php body_class(); ?>>
 header(role="banner")
