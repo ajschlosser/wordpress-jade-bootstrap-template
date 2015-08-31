@@ -2,17 +2,16 @@
 * Basic Gulp.js workflow
 * for simple front-end projects
 * author: Aaron John Schlosser
-* homepage: http://www.a3aronschlosser.com
+* homepage: http://www.aaronschlosser.com
 * github: http://www.github.com/ajschlosser
 */
 
-var gulp 				= require("gulp"),
-	gutil 				= require("gulp-util"),
-	watch 				= require("gulp-watch"),
-	compass 			= require("gulp-compass"),
-	jade 				= require("gulp-jade-php"),
-	plumber				= require("gulp-plumber"),
-	livereload			= require("gulp-livereload")
+var gulp				= require("gulp"),
+	gutil				= require("gulp-util"),
+	watch				= require("gulp-watch"),
+	compass				= require("gulp-compass"),
+	jade				= require("gulp-jade-php"),
+	plumber				= require("gulp-plumber");
 
 var paths = {
 	styles: {
@@ -26,8 +25,8 @@ var paths = {
 };
 
 function handleError(err) {
-  console.log(err.toString());
-  this.emit('end');
+	console.log(err.toString());
+	this.emit('end');
 }
 
 gulp.task("styles", function() {
@@ -46,15 +45,16 @@ gulp.task("styles", function() {
 });
 
 gulp.task("templates", function() {
-  gulp.src(paths.templates.src)
-  	.pipe(plumber())
-	.pipe(jade())
-	.pipe(plumber.stop())		
-	.pipe(gulp.dest(paths.templates.dest));
+	gulp.src(paths.templates.src)
+		.pipe(plumber())
+		.pipe(jade({
+			pretty: '\t'	// Set to false to minify/uglify the PHP
+		}))
+		.pipe(plumber.stop())
+		.pipe(gulp.dest(paths.templates.dest));
 });
 
 gulp.task("default", function() {
-	livereload.listen();
 	gulp.watch(paths.styles.src, ["styles"]);
 	gulp.watch(paths.templates.src, ["templates"]);
 });
